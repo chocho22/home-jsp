@@ -17,4 +17,12 @@
     <servlet-name>UserServlet</servlet-name>
     <url-pattern>/user</url-pattern>
   </servlet-mapping>
+  <servlet>
+  	<servlet-name>PBoardServlet</servlet-name>
+  	<servlet-class>test.jsp.pb.servlet.PBoardServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>PBoardServlet</servlet-name>
+  	<url-pattern>/pboard/*</url-pattern>
+  </servlet-mapping>
 </web-app>
