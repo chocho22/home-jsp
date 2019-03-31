@@ -4,6 +4,8 @@ public class CommonCodeVO {
 	private Integer ccNum;
 	private String ccGroup;
 	private String ccCode;
+	private String ccName;
+	
 	public Integer getCcNum() {
 		return ccNum;
 	}
@@ -28,7 +30,6 @@ public class CommonCodeVO {
 	public void setCcName(String ccName) {
 		this.ccName = ccName;
 	}
-	private String ccName;
 	@Override
 	public String toString() {
 		return "CommonCodeVO [ccNum=" + ccNum + ", ccGroup=" + ccGroup + ", ccCode=" + ccCode + ", ccName=" + ccName

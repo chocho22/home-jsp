@@ -84,5 +84,9 @@ public class PBoardDAOImpl implements PBoardDAO {
 		}
 		return null;
 	}
-
+	public static void main(String[] args) {
+		PBoardDAO pbdao = new PBoardDAOImpl();
+		pbdao.selectPBoardList();
+		System.out.println(pbdao.selectPBoardList());
+	}
 }

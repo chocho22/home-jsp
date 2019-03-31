@@ -6,13 +6,13 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import test.jsp.study.db.DBCon;
 import test.jsp.trans.dao.CommonCodeDAO;
+import test.jsp.trans.db.DBCon;
 import test.jsp.trans.vo.CommonCodeVO;
 
 public class CommonCodeDAOImpl implements CommonCodeDAO {
 	private static final String SELECT_LIST = "select * from common_code where cc_group=?";
-
+	
 	@Override
 	public List<CommonCodeVO> selectCommonCodeList(String ccGroup) {
 		try {
@@ -34,5 +34,9 @@ public class CommonCodeDAOImpl implements CommonCodeDAO {
 		}
 		return null;
 	}
-
+	public static void main(String[] args) {
+		CommonCodeDAO ccdao = new CommonCodeDAOImpl();
+		ccdao.selectCommonCodeList("trans");
+		System.out.println(ccdao.selectCommonCodeList("trans"));
+	}
 }
